@@ -1,0 +1,301 @@
+
+Z:\>c:
+
+C:\>cd Users
+
+C:\Users>cd students
+The system cannot find the path specified.
+
+C:\Users>cd student
+
+C:\Users\student>cd ost
+
+C:\Users\student\ost>git init
+Initialized empty Git repository in C:/Users/student/ost/.git/
+
+C:\Users\student\ost>cd ost
+The system cannot find the path specified.
+
+C:\Users\student\ost>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\student\ost>echo sample.txt
+sample.txt
+
+C:\Users\student\ost>echo demo.py
+demo.py
+
+C:\Users\student\ost>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\student\ost>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 95C3-F9A6
+
+ Directory of C:\Users\student\ost
+
+16-02-2026  12:07    <DIR>          .
+16-02-2026  12:07    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  83,487,076,352 bytes free
+
+C:\Users\student\ost>echo sample.txt
+sample.txt
+
+C:\Users\student\ost>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 95C3-F9A6
+
+ Directory of C:\Users\student\ost
+
+16-02-2026  12:07    <DIR>          .
+16-02-2026  12:07    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  83,486,867,456 bytes free
+
+C:\Users\student\ost>echo Hello> sample.txt
+
+C:\Users\student\ost>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 95C3-F9A6
+
+ Directory of C:\Users\student\ost
+
+16-02-2026  12:08    <DIR>          .
+16-02-2026  12:08    <DIR>          ..
+16-02-2026  12:08                 7 sample.txt
+               1 File(s)              7 bytes
+               2 Dir(s)  83,486,617,600 bytes free
+
+C:\Users\student\ost>type sample.txt
+Hello
+
+C:\Users\student\ost>git commit -m "Initial Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\student\ost>git commit -m "Initial Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\student\ost>git add sample.txt
+
+C:\Users\student\ost>git commit -m "Initial Commit"
+[master (root-commit) f12d3f8] Initial Commit
+ Committer: Students <student@mefgi.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+C:\Users\student\ost>git branch
+* master
+
+C:\Users\student\ost>git branch -m master main
+
+C:\Users\student\ost>git branch
+* main
+
+C:\Users\student\ost>
+C:\Users\student\ost>git checkout main
+Already on 'main'
+
+C:\Users\student\ost>git checkout -b dev
+Switched to a new branch 'dev'
+
+C:\Users\student\ost>echo Hello from dev>> sample.txt
+
+C:\Users\student\ost>git add .
+
+C:\Users\student\ost>git commit -m "Update in dev"
+[dev 280a2c0] Update in dev
+ Committer: Students <student@mefgi.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+C:\Users\student\ost>git merge dev
+Already up to date.
+
+C:\Users\student\ost>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 95C3-F9A6
+
+ Directory of C:\Users\student\ost
+
+16-02-2026  12:08    <DIR>          .
+16-02-2026  12:08    <DIR>          ..
+16-02-2026  12:11                23 sample.txt
+               1 File(s)             23 bytes
+               2 Dir(s)  83,491,004,416 bytes free
+
+C:\Users\student\ost>>type sample.txt
+
+C:\Users\student\ost>git remote -v
+
+C:\Users\student\ost>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\student\ost>https://github.com/dvn-17/OST-PRAC/ostdemo.git
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\student\ost>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\student\ost>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\student\ost>https://github.com/dvn-17/OST-PRAC/ost.git
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\student\ost>git remote -v https://github.com/dvn-17/OST-PRAC.git
+error: unknown subcommand: `https://github.com/dvn-17/OST-PRAC.git'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+C:\Users\student\ost>git remote -v
+
+C:\Users\student\ost>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\student\ost>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\student\ost>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\student\ost>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\student\ost>git remote -v
+
+C:\Users\student\ost>git remote -v https://github.com/dvn-17/OST-PRAC.git
+error: unknown subcommand: `https://github.com/dvn-17/OST-PRAC.git'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+C:\Users\student\ost>git remote add origin https://github.com/dvn-17/OST-PRAC.git
+
+C:\Users\student\ost>git remote -v
+origin  https://github.com/dvn-17/OST-PRAC.git (fetch)
+origin  https://github.com/dvn-17/OST-PRAC.git (push)
+
+C:\Users\student\ost>git push -u origin main
